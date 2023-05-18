@@ -1,5 +1,8 @@
 <?php
 
+use App\Mail\ExampleMain;
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +15,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get("/teste",function(){
 
+    //return (new ExampleMain([]))->render();
+
+    $user = User::find(1);
+
+    Mail::to("teste@email")
+    ->send(new ExampleMain($user));
+    return redirect("/");
+});
 Route::get('/', function () {
     return view('welcome');
 });
