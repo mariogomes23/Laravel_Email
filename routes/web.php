@@ -1,6 +1,7 @@
 <?php
 
 use App\Mail\ExampleMain;
+use App\Mail\Welcome;
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -22,7 +23,7 @@ Route::get("/teste",function(){
     $user = User::find(1);
 
     Mail::to("teste@email")
-    ->send(new ExampleMain($user));
+    ->send(new Welcome);
     return redirect("/");
 });
 Route::get('/', function () {
