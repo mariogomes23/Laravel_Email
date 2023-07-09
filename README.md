@@ -1,17 +1,19 @@
-# Cadastro de Usuarios
+# Laravel Email com Maltrap.io
 ## Stacks e Tecnologias
- `PHP 8.1 | COMPOSER 2.* | MySQL  8.* | LARAVE 10 | DDD | Repository | JavaScript | Blade`
+ `PHP 8.1 | COMPOSER 2.* | MySQL  8.* | LARAVE 10  | Blade`
  
 ## Instalação do Projecto 
 
 Baixe a aplicação: Baixe o código-fonte da aplicação Laravel do repositório do GitHub. Isso pode ser feito usando o comando git clone seguido pelo URL do repositório. Por exemplo:
 bash
 
-    https://github.com/Dumilson/app-register-users-laravel.git
+    https://github.com/mariogomes23/Laravel_Email
+   
 
 Navegue até a `pasta raiz da aplicação Laravel` no seu terminal:
 
-    cd app-register-users-laravel
+           cd Laravel_Email
+    
 Faça uma cópia do arquivo .env.example: Execute o seguinte comando para criar uma cópia do arquivo .env.example e renomeá-lo para .env:
 
     cp .env.example .env
@@ -45,10 +47,7 @@ Execute os seeders execute o comando:
 
     php artisan db:seed
 
-Depois de o seed os dados gravados para acesso ao sistema são :
 
-        Email: admin@gmail.com
-        Senha: admin
 
 ### `Rodando o Projecto`
 Gere uma chave de aplicação única usando o comando:
